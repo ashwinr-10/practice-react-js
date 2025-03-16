@@ -1,5 +1,5 @@
 
-export const NetflixSeries = () => {
+const NetflixSeries = () => {
     const name = "Queen Of Tears";
     const rating = "8.2";
     let age = 18;
@@ -37,7 +37,11 @@ export const NetflixSeries = () => {
       );
    };
   
-//   export default NetflixSeries;
+export default NetflixSeries;
+
+export const Header = () => {
+    return <p>Netflix Series</p>
+}
 
 export const Footer = () => {
     return <p>copyright @google</p>
