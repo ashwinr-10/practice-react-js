@@ -13,6 +13,15 @@
   const name = "Queen Of Tears";
   const rating = "8.2";
   let age = 18;
+  
+  const canWatch = () => {
+    if (age >= 18) return "Watch Now";
+    return "Not Available";
+  };
+
+  /* let canWatch = "Not Available";
+  if(age >= 18) canWatch = "Watch Now"; */
+  
   const summary = `
   Baek Hyun-woo and Hong Hae-in navigate 
   a tense relationship, both at home and at work. 
@@ -23,22 +32,6 @@
   const genre = "Romcom";  
   return genre;
  };
-
- if(age < 18){
-  return (
-    <>
-<div>
-   <img src="qot.jpg" alt="qot.jpg" 
-   width="40%" height="40%"/>
-</div>
-<h2>Name: {name} </h2>
-<h3>Rating: {rating}</h3>
-<p>Summary: {summary} </p>
-<p>Genre: {getGenre()}</p>
-<button>Not Available</button>
-</>
-);
-} else {
  
   return (
          <>
@@ -50,8 +43,9 @@
   <h3>Rating: {rating}</h3>
   <p>Summary: {summary} </p>
   <p>Genre: {getGenre()}</p>
-  <button>Watch now</button>
+ {/* <button> {age >= 18 ? "Watch Now" : "Not Available"} </button> */}
+ {/* <button>{canWatch}</button> */}
+ <button>{canWatch()}</button>
     </>
     );
  };
-}
