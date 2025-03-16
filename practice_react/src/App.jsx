@@ -19,8 +19,7 @@
     return "Not Available";
   };
 
-  /* let canWatch = "Not Available";
-  if(age >= 18) canWatch = "Watch Now"; */
+ 
   
   const summary = `
   Baek Hyun-woo and Hong Hae-in navigate 
@@ -43,9 +42,7 @@
   <h3>Rating: {rating}</h3>
   <p>Summary: {summary} </p>
   <p>Genre: {getGenre()}</p>
- {/* <button> {age >= 18 ? "Watch Now" : "Not Available"} </button> */}
- {/* <button>{canWatch}</button> */}
- <button>{canWatch()}</button>
+  <button>{canWatch()}</button>
     </>
     );
  };
