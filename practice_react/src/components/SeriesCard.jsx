@@ -1,6 +1,6 @@
 export const SeriesCard = (props) => {
     return (
-        <li key={props.curElem.id}>
+        <li key={props.key}>
         <div>
           <img src={props.curElem.img_url} alt="qot.jpg" 
           width="40%" height="40%"/>
