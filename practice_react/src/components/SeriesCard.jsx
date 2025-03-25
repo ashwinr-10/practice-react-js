@@ -1,20 +1,29 @@
 export const SeriesCard = ({curElem}) => {    //(props)
      // console.log(curElem);
-      const { id , img_url , name , rating , description , genre , cast , watch_url } = curElem;   //props.curElem
+     const btn_style = {
+      padding: "1.2rem 2.4rem",
+      border: "none",
+      fontSize: "1.6rem",
+      backgroundColor: "var( --bnt-hover-bg-color)",
+      color: "var(--bg-color)",
+    } 
+     const { id , img_url , name , rating , description , genre , cast , watch_url } = curElem;   //props.curElem
     return (
-        <li key={id}>
+        <li className="card" key={id}>
         <div>
           <img src={img_url} alt="qot.jpg" 
           width="40%" height="40%"/>
           </div>
+      <div className="card-content">
           <h2>Name: {name} </h2>
         <h3>Rating: {rating}</h3>
         <p>Summary: {description} </p>
-        <p>Genre: {genre}</p>
-        <p>Cast: {cast}</p>
+        <p>Genre: {genre.join(", ")}</p>
+        <p>Cast: {cast.join(", ")}</p>
         <a href={watch_url} target="_blank">
-        <button>Watch Now</button>
+        <button style={btn_style}>Watch Now</button>
         </a>
+      </div>
 
         </li>
      )
