@@ -1,17 +1,19 @@
 import styles from "./Netflix.module.css"; 
+import styled from "styled-components";
 export const SeriesCard = ({curElem}) => {    //(props)
      // console.log(curElem);
      
     const { id , img_url , name , rating , description , genre , cast , watch_url } = curElem;   //props.curElem
-    const btn_style = {
-      padding: "1.2rem 2.4rem",
-      border: "none",
-      fontSize: "1.6rem",
-      backgroundColor: "var( --bnt-hover-bg-color)", //`${rating >= 8.5 ? "#7dcea0" : "#f7dc6f"}`
-      color: "var(--bg-color)",
-      fontWeight: "bold",
-      cursor: "pointer",
-    } 
+   const ButtonStyled = styled.button({
+    padding: "1.2rem 2.4rem",
+    border: "none",
+    fontSize: "1.6rem",
+    backgroundColor: "var( --bnt-hover-bg-color)", //`${rating >= 8.5 ? "#7dcea0" : "#f7dc6f"}`
+    color: "var(--bg-color)",
+    fontWeight: "bold",
+    cursor: "pointer",
+   });
+    //const btn_style = {} 
     const ratingClass = rating >= 8.5 ? styles.super_hit : styles.average; 
     return (
         <li className={styles.card} key={id}>
@@ -31,7 +33,8 @@ export const SeriesCard = ({curElem}) => {    //(props)
         <p>Genre: {genre.join(", ")}</p>
         <p>Cast: {cast.join(", ")}</p>
         <a href={watch_url} target="_blank">
-        <button style={btn_style}>Watch Now</button>
+        {/* <button style={btn_style}>Watch Now</button> */}
+        <ButtonStyled>Watch Now</ButtonStyled>
         </a>
       </div>
 
