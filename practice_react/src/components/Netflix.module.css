@@ -10,12 +10,12 @@ img{
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
-.card-content{
+/* .card-content{
     padding: 3.2rem 1.2rem;
     display: flex;
     flex-direction: column; 
-    gap: 1.5rem;
-}
+    gap: 1.2rem;
+} */
 
 .super_hit {
     background-color: #7dcea0;

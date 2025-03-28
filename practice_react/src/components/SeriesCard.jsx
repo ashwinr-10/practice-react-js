@@ -21,7 +21,8 @@ export const SeriesCard = ({curElem}) => {    //(props)
           <img src={img_url} alt="qot.jpg" 
           width="40%" height="40%"/>
           </div>
-      <div className={styles["card-content"]}>
+      {/* <div className={styles["card-content"]}> */}
+        <div className="flex flex-col gap-6 py-6 px-6">
           <h2>Name: {name} </h2>
         <h3>
           Rating: 
@@ -29,7 +30,7 @@ export const SeriesCard = ({curElem}) => {    //(props)
           {rating}
           </span>
         </h3>
-        <p>Summary: {description} </p>
+        <p className="text-3xl font-bold underline">Summary: {description} </p>
         <p>Genre: {genre.join(", ")}</p>
         <p>Cast: {cast.join(", ")}</p>
         <a href={watch_url} target="_blank">
