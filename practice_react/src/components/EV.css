@@ -1,0 +1,32 @@
+.main-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .g-div {
+    padding: 20px;
+    background-color: #ffcccb;
+    border: 2px solid red;
+  }
+  
+  .p-div {
+    padding: 20px;
+    background-color: #add8e6;
+    border: 2px solid blue;
+  }
+  
+  .c-div {
+    padding: 10px 20px;
+    background-color: #90ee90;
+    border: 2px solid green;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .c-div:hover {
+    background-color: #76c776;
+  }
+  

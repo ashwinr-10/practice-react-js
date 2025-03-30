@@ -1,0 +1,38 @@
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #ddd;
+  }
+  
+  button:active {
+    background-color: #bbb;
+  }
+  
+  /* Styling for EventProps Component */
+  .WelcomeUser button {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .WelcomeUser button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Styling for EventHandling Component */
+  .EventHandling button {
+    background-color: #008cba;
+    color: white;
+  }
+  
+  .EventHandling button:hover {
+    background-color: #007bb5;
+  }
+  

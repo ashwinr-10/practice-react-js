@@ -1,3 +1,5 @@
+import "./EventStyles.css";
+
 export const EventHandling = () => {
 
     function handleButtonClick(event) {

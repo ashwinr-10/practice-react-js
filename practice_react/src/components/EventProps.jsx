@@ -1,3 +1,5 @@
+import "./EventStyles.css";
+
 export const EventProps = () => {
     const HandleWelcomeUser = (user) => {
         alert(`Hey, ${user}`);
