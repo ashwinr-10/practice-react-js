@@ -1,12 +1,16 @@
 .main-div {
+  height: 80vh;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #f4f4f4;
+    
   }
   
   .g-div {
+    height: 100rem;
+    width: 50rem;
     padding: 20px;
     background-color: #ffcccb;
     border: 2px solid red;
@@ -29,4 +33,9 @@
   .c-div:hover {
     background-color: #76c776;
   }
-  
+ 
+  button {
+    width:100px;
+    height:50px;
+    background-color: aqua;
+  }
